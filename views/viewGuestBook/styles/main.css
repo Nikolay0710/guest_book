@@ -1,0 +1,157 @@
+body, html {
+	height: 100%;
+}
+
+body {
+	background-color: #ECEAEA;
+	font-family: Tahoma;
+	font-size: 12pt;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+a img {
+	border: none;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#container {
+	text-align: center;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+#container nav {
+	padding: 0 0 10px;
+}
+
+#container nav a {
+	color: #ACA6A6;
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+#header {
+	background-color: #514545;
+}
+
+#container nav a:hover, #container nav .action {
+	color: #65937B;
+}
+
+/* Конец head */
+/* Начало body */
+
+#content {
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#footer {
+	text-align: center;
+}
+
+#inFoot {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+}
+
+#post {
+	background-color: #fff;
+	margin: 25px auto 0;
+	width: 600px;
+	padding: 20px;
+}
+
+.table {
+	width: 100%;
+}
+
+.w {
+	width: 103px
+}
+
+.table textarea {
+	resize: none;
+	height: 100px;
+	width: 167px;
+}
+
+.table tr, .table td {
+	vertical-align: middle;
+}
+
+.border {
+	margin-bottom: 20px;
+}
+
+.border, .border tr, .border td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 10px;
+}
+
+.border tr:last-child {
+	text-align: left;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+#sub {
+	margin: 10px 0;
+	width: 270px;
+	cursor: pointer;
+}
+
+.decorationText {
+	text-decoration: line-through;
+}
+
+#post h1 {
+	color: #65937B;
+	margin: 10px 0:
+}
+
+#post p {
+	color: #514545;
+	margin: 0:
+}
+
+#post a {
+	color: #65937B;
+	font-style: italic;
+}
+
+#separatot {
+	padding-top: 10px;
+}
+
+/* Конец body */
+/* Начало footer */
+
+#copy {
+	color: #BBB6B5;
+	font-size: 85%;
+}
+
+.right {
+	color: #BBB6B5;
+	text-align: right;
+}
+
+/* Конец footer */
