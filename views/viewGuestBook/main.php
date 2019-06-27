@@ -1,4 +1,3 @@
-
 		<img src="<?=TEMPLATE?>images/images.png" alt="" />
 		<h1>Fusce Eleifend Posuere Nibsor</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend posuere nibh, 
