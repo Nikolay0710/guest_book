@@ -33,9 +33,9 @@
         break;
 
         case ('search'):
-        	
+        	$search = get_search();
         break;
-        
+        	
         default:
             // если из адресной строки получено имя несуществующего вида
             $view = 'main';
