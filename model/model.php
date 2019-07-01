@@ -10,7 +10,8 @@
 
 		if(!empty($userName) && !empty($email) && !empty($fullText) && !empty($meta)) {
 
-			$query = "INSERT INTO `book` (`userName`, `email`, `text`, `homePage`, `date`, `meta`) VALUES ('$userName','$email', '$fullText', '$homePage', NOW(), '$meta')";
+			$query = "INSERT INTO `book` (`userName`, `email`, `text`, `homePage`, `date`, `meta`) 
+				  VALUES ('$userName','$email', '$fullText', '$homePage', NOW(), '$meta')";
 
 			$result = mysqli_query($GLOBALS['db'], $query) or die(mysqli_error($GLOBALS['db']));
 			if(mysqli_affected_rows($GLOBALS['db']) > 0)
