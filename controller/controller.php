@@ -17,7 +17,7 @@
     // подключение файла функции
     require('functions/functions.php');
 
-	// получение динамичной части шаблона (#content)
+    // получение динамичной части шаблона (#content)
     $view = empty($_GET['view']) ? 'main' : $_GET['view'];
 
     $book = get_guest_book();
