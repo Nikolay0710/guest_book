@@ -27,12 +27,12 @@
 		$query = "SELECT `userName`, `email`, `text`, `homePage`, `date` FROM `book`";
 		$result = mysqli_query($GLOBALS['db'], $query) or die(mysqli_error($GLOBALS['db']));
         
-        $book = array();
-        while($row = mysqli_fetch_assoc($result)) {
-        	$book[] = $row;
-        }
+		$book = array();
+		while($row = mysqli_fetch_assoc($result)) {
+			$book[] = $row;
+		}
 
-        return $book;
+		return $book;
 	}
 
 	function get_search()
