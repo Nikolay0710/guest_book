@@ -1,0 +1,3 @@
+AddDefaultCharset utf-8
+php_flag magic_guotes_pgc off
+ErrorDocument 404 /page404/404.html
