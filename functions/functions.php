@@ -19,7 +19,7 @@
 		return $resCleanHtml;
 	}
 
-	/** ===== Постраничная навигация ===== */
+    /** ===== Постраничная навигация ===== */
     function paginatio($page, $pages_count) {
         if($_SERVER['QUERY_STRING']) { // если есть параметры в запросе
             foreach($_GET as $key => $value) {
