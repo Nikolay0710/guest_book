@@ -133,7 +133,7 @@ nav {
 	padding: 20px;
 }
 
-#post h1 {
+#post h1, $post h3 {
 	color: #65937B;
 	margin: 10px 0:
 }
