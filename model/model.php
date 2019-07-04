@@ -28,7 +28,7 @@
 		$email 		= trim($_POST['email']);
 		$fullText 	= trim(htmlspecialchars(($_POST['fullText'])));
 		$homePage 	= trim($_POST['homePage']);
-		$captcha    = abs( (int) $_POST['captcha'] );
+		$captcha        = abs( (int)$_POST['captcha'] );
 		$meta 		= cleanHtmlCodes($_POST['meta']);
 
 		if(!empty($userName) && !empty($email) && !empty($fullText) && !empty($captcha) && !empty($meta)) {
