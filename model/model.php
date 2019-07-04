@@ -52,11 +52,11 @@
 	{
 		$query = "SELECT `userName`, `email`, `text`, `homePage`, `date` FROM `book` LIMIT $start_pos,  $perpage";
 		$result = mysqli_query($GLOBALS['db'], $query) or die(mysqli_error($GLOBALS['db']));
-        $book = array();
-        while($row = mysqli_fetch_assoc($result)) {
-        	$book[] = $row;
-        }
-        return $book;
+        	$book = array();
+        	while($row = mysqli_fetch_assoc($result)) {
+        		$book[] = $row;
+        	}
+        	return $book;
 	}
 
 	function get_search()
