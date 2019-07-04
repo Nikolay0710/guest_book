@@ -149,7 +149,6 @@ nav {
      a.nav_active {
         border: 1px solid #ccc;
         background: #ccc none repeat scroll 0 0;
-        color: #ffffff;
         padding: 5px 7px;
         margin: 0 3px;
     }
@@ -162,7 +161,6 @@ nav {
     }
     a.nav_link:hover {
         background: #ccc none repeat scroll 0 0;
-        color: #ffffff; 
     }
 
 .footer {
@@ -189,5 +187,3 @@ nav {
 	color: #BBB6B5;
 	text-align: right;
 }
-
-/* Конец footer */
