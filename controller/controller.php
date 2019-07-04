@@ -3,27 +3,19 @@
     /** ===> Контроллер приветствует вас! <=== **/
 
     //ini_set('display_errors', -1);
-	//error_reporting(E_ALL);
+    //error_reporting(E_ALL);
 
     // проверка на доступность константы \\
     defined('INDEX') or die('Access denied');
+  
+    session_start() ;// стартуем сессию
     
-    // стартуем сессию
-    session_start();
-    
-    // подключение модели
-    require(MODEL);
-    
-    // подключение файла функции
-    require('functions/functions.php');
+    require(MODEL); // подключение модели
+    require('functions/functions.php');  // подключение файла функции
 
-    // получаем массив страниц
-    $pages = get_full_pages();
-
-	// получение динамичной части шаблона (#content)
-    $view = empty($_GET['view']) ? 'guest_book' : $_GET['view'];
-
-    $book = get_guest_book();
+    $pages = get_full_pages(); // получаем массив страниц
+    $view = empty($_GET['view']) ? 'guest_book' : $_GET['view']; // получение динамичной части шаблона (#content)
+    $book = get_guest_book(); // получение гостевой книги
     
     switch($view) {
 
@@ -36,10 +28,10 @@
             // страницы
         	$get_page_id = abs( (int) $_GET['page_id'] );
     		$page = get_page($get_page_id);
-             if(isset($_POST['submit'])) {
-				set_guest_book();
-				redirect();
-			}   
+                if(isset($_POST['submit'])) {
+		  set_guest_book();
+		  redirect();
+	        }   
         break;
 
         case ('search'):
@@ -52,7 +44,7 @@
         break;
     }
 
-	// подключение вила
+    // подключение вила
     require(TEMPLATE . 'index.php');
     
     /** ===> Контроллер приветствует вас! <=== **/
