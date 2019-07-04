@@ -1,4 +1,7 @@
 <h3><?=$page['textSite']?></h3>
+<?php if(isset($page['imgPage']) && $page['imgPage'] != 'no img'): ?>
+<img src='<?=TEMPLATE?>images/<?=$page['imgPage']?>' alt='<?=$page['titleSite']?>' />
+<?php endif; ?>
 <form method="POST" name='form_guest_book'>
 	<table class='table'>
 		<tr>
