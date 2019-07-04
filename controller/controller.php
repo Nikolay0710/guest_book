@@ -46,7 +46,7 @@
             if(!$pages_count) $pages_count = 1; // должна быть хотя бы 1 страница
             if($list > $pages_count) $list = $pages_count; // если запрошенная страница больше максимума
             $start_pos = (($list - 1) * COUNT_COMMENTS); // начальная позиция для запроса
-            $book = get_guest_book($start_pos,  COUNT_COMMENTS); // получение гостевой книги
+            $book = get_guest_book($start_pos, COUNT_COMMENTS); // получение гостевой книги
         break;
 
         case ('search'):
