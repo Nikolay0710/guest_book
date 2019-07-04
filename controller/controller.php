@@ -20,14 +20,14 @@
 
     	case('page'):
     		if(isset($_GET['page_id'])) {
-    			$get_page_id = abs( (int) $_GET['page_id'] );
+    			$get_page_id = abs( (int)$_GET['page_id'] );
     			$page = get_page($get_page_id);
     		}
     	break;
         
         case('guest_book'):
             // страницы
-        	$get_page_id = abs( (int) $_GET['page_id'] );
+        	$get_page_id = abs( (int)$_GET['page_id'] );
     		$page = get_page($get_page_id);
 
         	 if(isset($_GET['page'])) {
@@ -36,11 +36,11 @@
             } else $list = 1;
 
             if(isset($_POST['submit'])) {
-		  		set_guest_book();
-		  		redirect();
+		  	set_guest_book();
+		  	redirect();
 	        }
 
-	        // пораметры для навигации
+	    // пораметры для навигации
             $count_pages = count_oll_guest_book(); // получение общее количество товаров конкретной категории
             $pages_count = ceil($count_pages / COUNT_COMMENTS); // кол-во товаров и округляем до целого числа
             if(!$pages_count) $pages_count = 1; // должна быть хотя бы 1 страница
