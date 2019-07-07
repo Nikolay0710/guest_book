@@ -1,7 +1,7 @@
 <?php if(!empty($page)): ?>
 	<h3><?=$page['titleSite']?></h3>
 	<?php if(isset($page['imgPage']) && $page['imgPage'] != 'no img'): ?>
-	<img src='<?=TEMPLATE?>images/<?=$page['imgPage']?>' alt='<?=$page['titleSite']?>' />
+	<img src='<?=TEMPLATE?>images/bg_pages/<?=$page['imgPage']?>' alt='<?=$page['titleSite']?>' />
 	<?php endif; ?>
 	<?=$page['textSite']?>
 <?php else: ?>
