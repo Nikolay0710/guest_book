@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <link rel='shortcut icon' type='image/x-icon' href='<?=TEMPLATE?>icon.png' />
     <title><?=isset($page["titleSite"]) ? $page["titleSite"] : "Гостевая книга"?></title>
     <meta http-equiv="content-type" content = "text/html; charset = utf-8" />
     <meta name='keywords' content='<?=isset($page["metaKey"]) ? $page["metaKey"] : "Ключевые слова, главной страницы сайта" ?>' />
