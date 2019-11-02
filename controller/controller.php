@@ -41,12 +41,12 @@
 	        }
 
 	    // пораметры для навигации
-            $count_pages = count_oll_guest_book(); // получение общее количество товаров конкретной категории
-            $pages_count = ceil($count_pages / COUNT_COMMENTS); // кол-во товаров и округляем до целого числа
-            if(!$pages_count) $pages_count = 1; // должна быть хотя бы 1 страница
-            if($list > $pages_count) $list = $pages_count; // если запрошенная страница больше максимума
-            $start_pos = (($list - 1) * COUNT_COMMENTS); // начальная позиция для запроса
-            $book = get_guest_book($start_pos, COUNT_COMMENTS); // получение гостевой книги
+            $count_pages = count_oll_guest_book();
+            $pages_count = ceil($count_pages / COUNT_COMMENTS);
+            if(!$pages_count) $pages_count = 1;
+            if($list > $pages_count) $list = $pages_count;
+            $start_pos = (($list - 1) * COUNT_COMMENTS);
+            $book = get_guest_book($start_pos, COUNT_COMMENTS);
         break;
 
         case ('search'):
